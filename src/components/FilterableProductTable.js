@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 
 import SearchBar from './SearchBar';
 
+import ProductTable from './ProductTable';
+
 class FilterableProductTable extends Component {
     constructor(props) {
         super(props);
@@ -14,9 +16,9 @@ class FilterableProductTable extends Component {
 
     render() {
         return (
-            <div>
+            <div className="App">
                 <SearchBar />
-
+                <ProductTable products={this.props.products} />
             </div>
         );
     }

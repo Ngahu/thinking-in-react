@@ -10,7 +10,7 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <form>
+            <form className="App">
                 <input type="text" placeholder="Search..." />
                 <p>
                 <input type="checkbox" />
